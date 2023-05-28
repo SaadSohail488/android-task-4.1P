@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/mainHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start your Workout"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:id="@+id/workout_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout Time: 00:00"
+            android:textSize="18sp"
+            android:padding="16dp"/>
+
+        <EditText
+            android:id="@+id/workout_time_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Workout Time in minutes"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/rest_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rest Time 00:00"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/rest_time_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Rest Time in minutes"
+            android:inputType="number"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:enabled="false"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:progress="0"
+        android:max="100"
+        android:layout_gravity="center_horizontal"
+        style="@android:style/Widget.ProgressBar.Horizontal" />
+
+</LinearLayout>
